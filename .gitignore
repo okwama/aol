@@ -1,0 +1,45 @@
+
+# Flutter/Dart/Pub related
+.dart_tool/
+.packages
+.pub-cache/
+.pub/
+build/
+
+# Android
+android/.gradle/
+android/app/build/
+*.apk
+*.aab
+*.keystore
+*.jks
+
+# iOS
+ios/Pods/
+ios/Runner.xcworkspace/
+ios/build/
+
+# macOS
+macos/Pods/
+macos/Runner.xcworkspace/
+macos/build/
+
+# Web
+web/build/
+
+# Windows
+windows/build/
+
+# Linux
+linux/build/
+
+# IDEs and OS
+.idea/
+.vscode/
+*.DS_Store
+
+# Binaries
+*.so
+*.zip
+# Node.js
+node_modules/
