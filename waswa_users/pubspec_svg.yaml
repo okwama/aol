@@ -1,0 +1,30 @@
+# Alternative pubspec.yaml configuration for SVG launcher icons
+# Copy this configuration to pubspec.yaml if you prefer SVG format
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  # Using SVG format (better scalability, limited platform support)
+  svg_path: "assets/images/file.svg"
+  image_path_android: "assets/images/file.svg"
+  image_path_ios: "assets/images/file.svg"
+  min_sdk_android: 21
+  web:
+    generate: true
+    svg_path: "assets/images/file.svg"
+    background_color: "#ffffff"
+    theme_color: "#2196f3"
+  windows:
+    generate: true
+    svg_path: "assets/images/file.svg"
+    icon_size: 48
+  macos:
+    generate: true
+    svg_path: "assets/images/file.svg"
+  
+  # Note: SVG support varies by platform:
+  # - Android: Full support
+  # - iOS: Limited support (may need PNG fallback)
+  # - Web: Full support
+  # - Windows: Full support
+  # - macOS: Limited support (may need PNG fallback)

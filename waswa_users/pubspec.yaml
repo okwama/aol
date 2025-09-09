@@ -1,0 +1,70 @@
+name: jlw_foundation
+description: JLW Foundation - Empowering communities through educational support, emergency assistance, and local initiatives. Access bursary applications, community events, ambulance services, and stay connected with foundation activities.
+publish_to: 'none'
+version: 1.0.6+6
+homepage: https://jlw-api.vercel.app
+repository: https://github.com/your-username/jlw_foundation
+issue_tracker: https://github.com/your-username/jlw_foundation/issues
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  shared_preferences: ^2.2.2
+  table_calendar: ^3.0.9
+  fluttertoast: ^8.2.4
+  intl: ^0.18.1
+  cached_network_image: ^3.3.0
+  sqflite: ^2.3.0
+  path: ^1.8.3
+  flutter_secure_storage: ^9.0.0
+  http: ^1.1.0
+  file_picker: ^10.3.2
+  connectivity_plus: ^5.0.2
+  flutter_local_notifications: ^19.4.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+   
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/poppins.regular.ttf
+        - asset: assets/fonts/poppins.bold.ttf
+          weight: 700 
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  # Using JPEG format (more widely supported across platforms)
+  image_path: "assets/images/img.jpeg"
+  image_path_android: "assets/images/img.jpeg"
+  image_path_ios: "assets/images/img.jpeg"
+  min_sdk_android: 21
+  web:
+    generate: true
+    image_path: "assets/images/img.jpeg"
+    background_color: "#ffffff"
+    theme_color: "#2196f3"
+  windows:
+    generate: true
+    image_path: "assets/images/img.jpeg"
+    icon_size: 48
+  macos:
+    generate: true
+    image_path: "assets/images/img.jpeg"
+  
+  # Alternative SVG configuration (uncomment if you prefer SVG)
+  # Note: SVG support varies by platform
+  # svg_path: "assets/images/file.svg" 
